@@ -15,12 +15,25 @@ html {
     touch-action: manipulation; 
 }
 
+/* prevents text from being selected on touchscreen devices */
+*.unselectable {
+    -moz-user-select: -moz-none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+ 
+    /*
+      Introduced in IE 10.
+      See http://ie.microsoft.com/testdrive/HTML5/msUserSelect/
+    */
+    -ms-user-select: none;
+    user-select: none;
+ }
+
 body {
     background-color: #921515;
     font-family: Monospace,Sans-Serif;
 }
 
-/* display: flex; margin: 0 auto; */
 .container {
     width: 100vw;
     height: 100vh;

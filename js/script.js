@@ -24,10 +24,10 @@
         ///////////////////////////////////////////////
 
         //  amount of divs to be rendered per wall  
-        let tunnelDivAmount = 25; //40
+        let tunnelDivAmount = 40; //40
 
         //  set speed of tunnel                    
-        let speedTunnel = 25; //42
+        let speedTunnel = 45; //42
 
         //  set boost power
         let boostValue = -0.7; // -0.7

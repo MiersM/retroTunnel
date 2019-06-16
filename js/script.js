@@ -57,7 +57,6 @@
         let score = 0;
         let highScoreStorage = 0;
         let highScore = 0;
-        let waveCounter = 0;
 
         let topArrayDivs = [];
         let bottomArrayDivs = [];
@@ -70,6 +69,9 @@
         let btnReset = document.getElementById('btnReset');
         document.getElementById("topTunnel").style.width = (renderAheadView + "%");
         document.getElementById("bottomTunnel").style.width = (renderAheadView + "%");
+
+        // prevent scroll isue from happening on mobile browsers
+        document.addEventListener('touchmove', function() { e.preventDefault(); }, { passive:false });
 
 
 

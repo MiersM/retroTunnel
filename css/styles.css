@@ -13,21 +13,27 @@ html {
 
     /* Disables double tap to zoom: https://developer.mozilla.org/en-US/docs/Web/CSS/touch-action*/
     touch-action: manipulation; 
+
+    /* prevents text from being selected on touchscreen devices */
+    -webkit-touch-callout: none; /* iOS Safari */
+      -webkit-user-select: none; /* Safari */
+       -khtml-user-select: none; /* Konqueror HTML */
+         -moz-user-select: none; /* Firefox */
+          -ms-user-select: none; /* Internet Explorer/Edge */
+              user-select: none; /* Non-prefixed version, currently
+                                    supported by Chrome and Opera */
 }
 
 /* prevents text from being selected on touchscreen devices */
+/*
 *.unselectable {
     -moz-user-select: -moz-none;
     -khtml-user-select: none;
     -webkit-user-select: none;
- 
-    /*
-      Introduced in IE 10.
-      See http://ie.microsoft.com/testdrive/HTML5/msUserSelect/
-    */
     -ms-user-select: none;
     user-select: none;
  }
+ */
 
 body {
     background-color: #921515;

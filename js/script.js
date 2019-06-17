@@ -22,6 +22,7 @@
         //window.addEventListener("load", function() { window. scrollTo(0, 0); });
 
         window.scrollTo(0, 0);
+        document.addEventListener("touchmove", function(e) { e.preventDefault() });
         // https://www.creativebloq.com/html5/12-html5-tricks-mobile-81412803
 
         // var body = document.documentElement;

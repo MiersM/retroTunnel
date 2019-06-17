@@ -32,7 +32,7 @@
         //  set boost power
         let boostValue = -0.7; // -0.7
 
-        // set gravity value
+        //  set gravity value
         let gravValue = 0.8; // 1
 
         ///////////////////////////////////////////////
@@ -71,7 +71,7 @@
         document.getElementById("bottomTunnel").style.width = (renderAheadView + "%");
 
         // prevent scroll isue from happening on mobile browsers
-        document.addEventListener('touchmove', function() { e.preventDefault(); }, { passive:false });
+        //document.addEventListener('touchmove', function() { e.preventDefault(); }, { passive:false });
 
 
 
@@ -163,8 +163,6 @@
             score = 0;
             isPaused = true;
             amountMoved = 0; // related to divtunnelmover
-            waveCounter = 0;
-            //sinWaveCounter = 0;
             bottomYval = 100;
             topBlockChanged = 50;
 

@@ -19,16 +19,21 @@
     //exec code after loading page
     window.addEventListener('load', function () {
 
-        var body = document.documentElement;
-        if (body.requestFullscreen) {
-            body.requestFullscreen();
-        } else if (body.webkitrequestFullscreen) {
-            body.webkitrequestFullscreen();
-        } else if (body.mozrequestFullscreen) {
-            body.mozrequestFullscreen();
-        } else if (body.msrequestFullscreen) {
-            body.msrequestFullscreen();
-        }
+        //window.addEventListener("load", function() { window. scrollTo(0, 0); });
+
+        window.scrollTo(0, 0);
+        // https://www.creativebloq.com/html5/12-html5-tricks-mobile-81412803
+
+        // var body = document.documentElement;
+        // if (body.requestFullscreen) {
+        //     body.requestFullscreen();
+        // } else if (body.webkitrequestFullscreen) {
+        //     body.webkitrequestFullscreen();
+        // } else if (body.mozrequestFullscreen) {
+        //     body.mozrequestFullscreen();
+        // } else if (body.msrequestFullscreen) {
+        //     body.msrequestFullscreen();
+        // }
 
         ///////////////////////////////////////////////
         //  ALTER THESE VALUES TO MAKE THE GAME FUN  //  

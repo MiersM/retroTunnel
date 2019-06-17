@@ -24,10 +24,10 @@
         ///////////////////////////////////////////////
 
         //  amount of divs to be rendered per wall  
-        let tunnelDivAmount = 40; //40
+        let tunnelDivAmount = 45; //40
 
         //  set speed of tunnel                    
-        let speedTunnel = 45; //42
+        let speedTunnel = 60; // 42
 
         //  set boost power
         let boostValue = -0.7; // -0.7
@@ -40,7 +40,7 @@
         ///////////////////////////////////////////////
 
         // change this value to see how far outside/inside the viewport each new block is rendered
-        let renderAheadView = 115;
+        let renderAheadView = 110; // 115
 
         // individual tunnel block width in %
         let wallBlockWidth = 30;

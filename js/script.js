@@ -19,6 +19,17 @@
     //exec code after loading page
     window.addEventListener('load', function () {
 
+        var body = document.documentElement;
+        if (body.requestFullscreen) {
+            body.requestFullscreen();
+        } else if (body.webkitrequestFullscreen) {
+            body.webkitrequestFullscreen();
+        } else if (body.mozrequestFullscreen) {
+            body.mozrequestFullscreen();
+        } else if (body.msrequestFullscreen) {
+            body.msrequestFullscreen();
+        }
+
         ///////////////////////////////////////////////
         //  ALTER THESE VALUES TO MAKE THE GAME FUN  //  
         ///////////////////////////////////////////////
@@ -363,35 +374,35 @@
         let sinValue;
 
         let periodTun = 175; // 150
-        let periodOffset=0.1;
-        let heightOffset=0.2;
+        let periodOffset = 0.1;
+        let heightOffset = 0.2;
 
         let amplitudeTun = 45;
 
         function changeBlockHeightPattern(blockHeightValue) {
 
-            
+
             // count new blocks, for usage in sinusfct
             newBlockCounter += 1;
 
             // reset counter based on the period
-            if (newBlockCounter == periodTun){
-                newBlockCounter=0;
+            if (newBlockCounter == periodTun) {
+                newBlockCounter = 0;
             }
 
 
-            
-            bottomYval+=heightOffset;
-            
 
-            if (bottomYval >= 153){
+            bottomYval += heightOffset;
+
+
+            if (bottomYval >= 153) {
                 //heightOffset*=-1;
-                heightOffset= -0.2;
+                heightOffset = -0.2;
             }
 
-            if (bottomYval <= 95){
+            if (bottomYval <= 95) {
                 //heightOffset*=-1;
-                heightOffset= 0.2;
+                heightOffset = 0.2;
             }
 
 
@@ -407,7 +418,7 @@
             // }
 
             sinValue = Math.sin((TWO_PI * newBlockCounter) / periodTun) * amplitudeTun;
-            
+
 
             //blockHeightValue = offsetYTunnel + Math.sin((TWO_PI * newBlockCounter) / periodTun) * amplitudeTun;
             blockHeightValue = offsetYTunnel + sinValue;
@@ -447,7 +458,7 @@
             //hero.style.transform = 'rotate('+ sinValue +'deg)'; 
 
             //hero.style.transform = "rotate("+ sinValue +"deg) translateY(" + moveY + "%)" ;
-            
+
             // attempt at rotating
             // hero.style.transform = "translateY(" + moveY + "%)  rotate("+ sinValue +"deg)" ;
             // console.log(moveY);

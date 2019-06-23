@@ -44,7 +44,7 @@
         let tunnelDivAmount = 45; //40
 
         //  set speed of tunnel                    
-        let speedTunnel = 60; // 42
+        let speedTunnel = 25; // 42
 
         //  set boost power
         let boostValue = -0.7; // -0.7

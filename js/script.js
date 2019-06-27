@@ -490,6 +490,8 @@
             }
             highScore = highScoreStorage;
             lblHighScore.textContent = "H: " + highScore;
+
+            // https://stackoverflow.com/questions/2647867/how-to-determine-if-variable-is-undefined-or-null
         }
 
 
@@ -546,3 +548,12 @@
 
     https://rogiervdl.github.io/JS-course/
 */
+
+/**
+ .hidden{
+    opacity: 0;
+    display: none;
+}
+
+document.getElementById('YourID').classList.add('hidden');
+ */
